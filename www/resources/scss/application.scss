@@ -1,0 +1,121 @@
+// 1. Variable overrides, example:
+$body-bg-color: #3B70A6;
+ 
+$base-color: #2a2b87;
+$base-gradient: '#292a84';
+$active-color: #292a84;
+
+$toolbar-gradient: 'glossy';
+
+$loading-spinner-color: #C5D9E3;
+
+$list-color: #000000; 
+$list-header-bg-color: #ffffff;
+$list-header-gradient: 'glossy';
+
+$form-bg-color: none;
+$form-field-bg-color: rgba(1, 1, 1, 0);
+$form-label-color: rgba(1, 1, 1, 0);
+  
+// 2. Include Sencha Touch styles
+@import '../../../../sencha-touch/resources/themes/stylesheets/sencha-touch/default/all';
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-carousel;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-list-paging;
+@include sencha-list-pullrefresh;
+@include sencha-layout;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;
+
+html, body
+{
+  background-size: 100% 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body
+{
+  background: url(../img/Default.png) no-repeat;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+.login
+{
+}
+
+.login .content
+{
+  padding: 0.5em;
+  margin-top: 3%;
+}
+
+.login .content .header
+{
+  margin-left: 0.3em;
+  margin-bottom: 0.5em;   
+}
+
+.login .content .form
+{
+  background: #ffffff;
+  border-radius: 0.5em;
+}
+
+.login .content .form .x-panel-body
+{
+  padding: 0.3em;
+}
+
+.login .content .developer
+{
+  text-align: center;
+  margin-top: 10%;    
+}
+
+.login .content .developer a
+{
+  text-decoration: none;
+  color: #000000;
+}
+
+.login .buttons
+{
+  border: none;
+  padding: 1em;
+}
+
+.login .buttons .button
+{
+  width: 100%;  
+}
+
+.attendance
+{
+  font-family: sans-serif;
+}
+
+.attendance-item-course
+{
+  font-size: 75%;
+  font-weight: bold;
+}
+
+.attendance-item-info
+{
+  font-size: 65%;
+}
